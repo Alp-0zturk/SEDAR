@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mainbackend.endpoints.v1.datasources package &mdash; documentation_pages 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            documentation_pages
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">mainbackend.endpoints.v1.datasources package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#mainbackend-endpoints-v1-datasources-datasource-endpoints-module">mainbackend.endpoints.v1.datasources.datasource_endpoints module</a></li>
+<li><a class="reference internal" href="#mainbackend-endpoints-v1-datasources-datasource-revision-builder-module">mainbackend.endpoints.v1.datasources.datasource_revision_builder module</a></li>
+<li><a class="reference internal" href="#module-mainbackend.endpoints.v1.datasources">Module contents</a><ul>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput</span></code></a><ul>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_CONTINUATION_TIMERS"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_CONTINUATION_TIMERS</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_ID_COLUMN"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_ID_COLUMN</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_NAME"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_NAME</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_FILES"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_PLUGIN_FILES</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_PACKAGES"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_PLUGIN_PACKAGES</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_FORMAT"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_READ_FORMAT</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_OPTIONS"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_READ_OPTIONS</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_TYPE"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_READ_TYPE</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SOURCE_FILES"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_SOURCE_FILES</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SPARK_PACKAGES"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_SPARK_PACKAGES</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_UPDATE_FOR"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_UPDATE_FOR</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_FORMAT"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_WRITE_FORMAT</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_MODE"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_WRITE_MODE</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_OPTIONS"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_WRITE_OPTIONS</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_TYPE"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.FIELD_WRITE_TYPE</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.continuation_timers"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.continuation_timers</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.id_column"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.id_column</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.name"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.name</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_files"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.plugin_files</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_packages"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.plugin_packages</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_format"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.read_format</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_options"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.read_options</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_type"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.read_type</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.source_files"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.source_files</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.spark_packages"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.spark_packages</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.update_for"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.update_for</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_format"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.write_format</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_mode"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.write_mode</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_options"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.write_options</span></code></a></li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_type"><code class="docutils literal notranslate"><span class="pre">DatasourceDefinitionInput.write_type</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mainbackend.endpoints.v1.datasources.datasource_dto"><code class="docutils literal notranslate"><span class="pre">datasource_dto()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">documentation_pages</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">mainbackend.endpoints.v1.datasources package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mainbackend.endpoints.v1.datasources.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mainbackend-endpoints-v1-datasources-package">
+<h1>mainbackend.endpoints.v1.datasources package<a class="headerlink" href="#mainbackend-endpoints-v1-datasources-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="mainbackend-endpoints-v1-datasources-datasource-endpoints-module">
+<h2>mainbackend.endpoints.v1.datasources.datasource_endpoints module<a class="headerlink" href="#mainbackend-endpoints-v1-datasources-datasource-endpoints-module" title="Permalink to this heading"></a></h2>
+</section>
+<section id="mainbackend-endpoints-v1-datasources-datasource-revision-builder-module">
+<h2>mainbackend.endpoints.v1.datasources.datasource_revision_builder module<a class="headerlink" href="#mainbackend-endpoints-v1-datasources-datasource-revision-builder-module" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-mainbackend.endpoints.v1.datasources">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mainbackend.endpoints.v1.datasources" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mainbackend.endpoints.v1.datasources.</span></span><span class="sig-name descname"><span class="pre">DatasourceDefinitionInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mainbackend/endpoints/v1/datasources.html#DatasourceDefinitionInput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_CONTINUATION_TIMERS">
+<span class="sig-name descname"><span class="pre">FIELD_CONTINUATION_TIMERS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'continuation_timers'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_CONTINUATION_TIMERS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_ID_COLUMN">
+<span class="sig-name descname"><span class="pre">FIELD_ID_COLUMN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'id_column'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_ID_COLUMN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_NAME">
+<span class="sig-name descname"><span class="pre">FIELD_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'name'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_NAME" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_FILES">
+<span class="sig-name descname"><span class="pre">FIELD_PLUGIN_FILES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plugin_files'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_FILES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_PACKAGES">
+<span class="sig-name descname"><span class="pre">FIELD_PLUGIN_PACKAGES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'plugin_packages'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_PLUGIN_PACKAGES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_FORMAT">
+<span class="sig-name descname"><span class="pre">FIELD_READ_FORMAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'read_format'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_FORMAT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_OPTIONS">
+<span class="sig-name descname"><span class="pre">FIELD_READ_OPTIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'read_options'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_OPTIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_TYPE">
+<span class="sig-name descname"><span class="pre">FIELD_READ_TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'read_type'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_READ_TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SOURCE_FILES">
+<span class="sig-name descname"><span class="pre">FIELD_SOURCE_FILES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'source_files'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SOURCE_FILES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SPARK_PACKAGES">
+<span class="sig-name descname"><span class="pre">FIELD_SPARK_PACKAGES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'spark_packages'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_SPARK_PACKAGES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_UPDATE_FOR">
+<span class="sig-name descname"><span class="pre">FIELD_UPDATE_FOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'update_for'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_UPDATE_FOR" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_FORMAT">
+<span class="sig-name descname"><span class="pre">FIELD_WRITE_FORMAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'write_format'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_FORMAT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_MODE">
+<span class="sig-name descname"><span class="pre">FIELD_WRITE_MODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'write_mode'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_MODE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_OPTIONS">
+<span class="sig-name descname"><span class="pre">FIELD_WRITE_OPTIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'write_options'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_OPTIONS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_TYPE">
+<span class="sig-name descname"><span class="pre">FIELD_WRITE_TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'write_type'</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.FIELD_WRITE_TYPE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.continuation_timers">
+<span class="sig-name descname"><span class="pre">continuation_timers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.continuation_timers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.id_column">
+<span class="sig-name descname"><span class="pre">id_column</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.id_column" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_files">
+<span class="sig-name descname"><span class="pre">plugin_files</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_files" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_packages">
+<span class="sig-name descname"><span class="pre">plugin_packages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.plugin_packages" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_format">
+<span class="sig-name descname"><span class="pre">read_format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_format" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_options">
+<span class="sig-name descname"><span class="pre">read_options</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_options" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_type">
+<span class="sig-name descname"><span class="pre">read_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="commons.html#commons.enums.ReadType" title="commons.enums.ReadType"><span class="pre">ReadType</span></a></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.read_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.source_files">
+<span class="sig-name descname"><span class="pre">source_files</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.source_files" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.spark_packages">
+<span class="sig-name descname"><span class="pre">spark_packages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.spark_packages" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.update_for">
+<span class="sig-name descname"><span class="pre">update_for</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.update_for" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_format">
+<span class="sig-name descname"><span class="pre">write_format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_format" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_mode">
+<span class="sig-name descname"><span class="pre">write_mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_mode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_options">
+<span class="sig-name descname"><span class="pre">write_options</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_options" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_type">
+<span class="sig-name descname"><span class="pre">write_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="commons.html#commons.enums.WriteType" title="commons.enums.WriteType"><span class="pre">WriteType</span></a></em><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.DatasourceDefinitionInput.write_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="mainbackend.endpoints.v1.datasources.datasource_dto">
+<span class="sig-prename descclassname"><span class="pre">mainbackend.endpoints.v1.datasources.</span></span><span class="sig-name descname"><span class="pre">datasource_dto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datasource</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="commons.models.datasource.html#commons.models.datasource.definition.DatasourceDefinition" title="commons.models.datasource.definition.DatasourceDefinition"><span class="pre">DatasourceDefinition</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mainbackend/endpoints/v1/datasources.html#datasource_dto"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mainbackend.endpoints.v1.datasources.datasource_dto" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Alp.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
